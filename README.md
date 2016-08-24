@@ -12,7 +12,7 @@ Zookeeper must be reachable at `localhost:2181` and Kafka broker at `localhost:9
 
 ## Interesting things
 
-- [`TopicShifter`](https://github.com/ncolomer/kafka-streams-join/blob/master/src/test/scala/me/dummy/TopicShifter.scala): spawn a Topology that create a new delayed topic from input one.
+- [`TopicShifter`](https://github.com/ncolomer/kafka-streams-join/blob/master/src/test/scala/me/dummy/TopicShifter.scala) class, that spawns a Topology that create a new time-shifted topic from input one.
 - [`TimeoutJoinTest`](https://github.com/ncolomer/kafka-streams-join/blob/master/src/test/scala/me/dummy/TimeoutJoinTest.scala#L106-L164) test cases, that shows how to emit an even when no-join occurred.
 
 ## Referring topics on the [confluent-platform](https://groups.google.com/forum/#!forum/confluent-platform) user group
